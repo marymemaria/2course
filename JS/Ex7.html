@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>array</title>
+<script language="JavaScript">
+function subarr(){
+lessons=new Array("математика","информатика","физика","литература","история","обществознание");
+tech=new Array(); //точные науки
+tech=lessons.slice(0,3);
+document.write(tech+"<br>");
+gum=new Array(); //гуманитарные науки
+gum=lessons.slice(3,6);
+document.write(gum);
+}
+</script>
+</head>
+<body>
+<script language="JavaScript">
+subarr();
+</script>
+</body>
+</html>
