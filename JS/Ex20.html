@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Задание 20</title>
+<script language="JavaScript">
+function moveTxt()
+{
+var elem=document.getElementById('anim');
+var y=parseInt(elem.style.left);
+y+=2;
+elem.style.left=y+"px";
+if(elem.style.left>0+"px")
+{
+setTimeout("moveTxt()",10);
+}
+}
+</script>
+</head>
+<body onLoad="moveTxt()">
+<div style="background:red;height:120px;width:140px;position:relative;font-size:50px;z-index:3;color:white">
+Это<br>
+ближе
+</div>
+<div id="anim" style="background:url('png1.gif');height:130px;width:130px;left:80px;top:60px;position:absolute;z-index:2">
+</div>
+<div style="background:blue;height:60px;width:80px;top:10px;left:200px;position:absolute;font-size:25px;z-index:1;color:white">
+Это дальше
+</div>
+</body>
+</html>
