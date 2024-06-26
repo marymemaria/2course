@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Задание 14</title>
+<script type="text/javascript">
+//проверка имени
+function ValidName(){
+var myName=document.getElementById('name').value;
+var valid=true;
+if(myName==""){
+valid=false;
+document.getElementById('name').focus();
+}
+return valid;
+}
+//проверка пароля
+function ValidPass(){
+var myPass=document.getElementById('password').value;
+var valid=true;
+if(myPass==""||myPass.length<=4){
+valid=false;
+document.getElementById('password').focus();
+}
+return valid;
+}
+//проверка совпадения паролей
+function ValidConfirmPass(){
+var myPass=document.getElementById('password').value;
+var myConfirmPass=document.getElementById('confirmPassword').value;
+var valid=true;
+if(myConfirmPass!=myPass){
+valid=false;
+document.getElementById('confirmPassword').focus();
+}
+return valid;
+}
+//проверка электронного адреса
+function ValidEmail(){
+var myEmail=document.getElementById('email').value;
+var valid=true;
+if(myEmail==""||myEmail.indexOf('@')==-1){
+valid=false;
+document.getElementById('email').focus();
+}
+return valid;
+}
+//проверка поля сообщение
+function ValidMessage(){
+var myMess=document.getElementById('message').value;
+var valid=true;
+if(myMess==""||myMess.length<=10){
+valid=false;
+document.getElementById('message').focus();
+}
+return valid;
+}
+</script>
+</head>
+<body>
+<p>Ваше имя: *<input id="name" name="name" type="text"></p>
+<p>Пароль *<input id="password" name="password" type="password"></p>
+<p>Подтверждение пароля *<input id="confirmPassword" name="confirmPassword" type="password"></p>
+<p>Электронный адрес: *<input id="email" name="email" type="email"></p>
+<p>Тема сообщения:<input type="text"></p>
+<p>Сообщение:<textarea id="message" name="message"></textarea></p>
+<input name="button" type="submit" value="Отправить" onClick="ValidName();ValidPass();ValidConfirmPass();ValidEmail();ValidMessage();">
+<button>Очистить</button>
+<br>*-необходимые для заполнения поля
+</body>
+</html>
