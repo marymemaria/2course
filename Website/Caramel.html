@@ -6,6 +6,10 @@
       .global {
          color: #00c6d0;
       }
+      h4 {
+         font-size: 15px;
+         margin: 0;
+      }
    </style>
 </head>
 <body>
@@ -34,38 +38,61 @@
    </div>
 </div>
 
+
+<section class="popular">
+   <div class="container">
+      <div class="popular__header">
+         <h2 class="popular__title">Популярные товары</h2>
+      </div>
+      <table cellspacing=0 width="1200">
+         <tr>
+            <td align="center"><img src="images/product-1.jpg" height="235" width="235"></td>
+            <td align="center"><img src="images/product-2.jpg" height="235" width="235"></td>
+            <td align="center"><img src="images/product-3.jpg" height="235" width="235"></td>
+            <td align="center"><img src="images/product-4.jpg" height="235" width="235"></td>
+         </tr>
+      </table>
+      <table cellspacing=0 cellpadding=20 width="1200">
+         <tr>
+            <td align="center" width="300"><div class="names">Фисташковое с малиной</div>100г<br><br><div class="price">74 руб</div></td>
+            <td align="center" width="300"><div class="names">Лакомка</div>70 гр<br><br><div class="price">30 руб</div></td>
+            <td align="center" width="300"><div class="names">Буше мини Вишня</div>18 гр<br><br><div class="price">34 руб</div></td>
+            <td align="center" width="300"><div class="names">Наполеон</div>80 гр<br><br><div class="price">79 руб</div></td>
+         </tr>
+      </table>
+   </div>
+</section>
+
+
 <img id ="about_comp" src="images/about-1.jpg" style="width: 50%; height: 100%; position: absolute; left: 50%;">
 <section class="section">
    <div class="container">
       <div class="section__header">
          <h2 class="section__title">О компании</h2>
-         <div class="section__text">
-            <p>Кондитерская фабрика «Карамель» — высокотехнологичное предприятие. Оборудование фабрики постоянно обновляется, что позволяет увеличивать объемы производства и расширять ассортимент выпускаемой продукции.</p>
-            <p>«Карамель» с вами уже более 15 лет! Используя в изделиях только натуральные продукты, мы учитываем мнение каждого клиента. Не используя заменителей и смесей в производстве, мы радуем своих покупателей домашний выпечкой</p>
+            <p class="section__text">Кондитерская фабрика «Карамель» — высокотехнологичное предприятие. Оборудование фабрики постоянно обновляется, что позволяет увеличивать объемы производства и расширять ассортимент выпускаемой продукции.</p>
+            <p class="section__text">«Карамель» с вами уже более 15 лет! Используя в изделиях только натуральные продукты, мы учитываем мнение каждого клиента. Не используя заменителей и смесей в производстве, мы радуем своих покупателей домашний выпечкой</p>
             <br>
-            <ul>
+            <ul class="section__text">
             <li>СОБСТВЕННОЕ ПРОИЗВОДСТВО
             <li>ДОСТАВКА 6 ДНЕЙ В НЕДЕЛЮ
             <li>БОНУСЫ И ПОДАРКИ ПАРТНЕРАМ
             <li>МИНИМАЛЬНЫЙ ЗАКАЗ ОТ 1500Р
             <li>100% ЗАМЕНА ПРОСРОЧЕНОГО ТОВАРА
             </ul>
-         </div>
       </div>
    </div>
 </section>
 
+
 <section id="contact" class="contacts">
    <div class="container">
       <div class="section__header">
-         <div class="contacts__title">
-            <p>Контакты</p>
-            <hr width=50 align=left size=6 color="#ffffff">
-            <div class="contacts__text">
-               Телефон: 8 (800) 000-00-00<br>
-               E-mail: <a href="mailto:caramel@example.com" class="global">caramel@example.com</a><br>
-               Адрес: <a href="https://yandex.ru/maps" class="global">г. Курд, ул. Сахарная, 35
-            </div>
+         <p class="contacts__title">Контакты</p>
+         <hr width=50 align=left size=6 color="#ffffff">
+         <div class="contacts__text">
+            Телефон: 8 (800) 000-00-00<br>
+            E-mail: <a href="mailto:caramel@example.com" class="global">caramel@example.com</a><br>
+            Адрес: <a href="https://yandex.ru/maps" class="global">г. Курд, ул. Сахарная, 35
          </div>
       </div>
    </div>
