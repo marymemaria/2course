@@ -25,6 +25,15 @@
          margin: 0 0 20px 0;
       }
    </style>
+
+   <script language="JavaScript">
+      function colorChange() {
+         head.style.color="#028188";
+      }
+      function colorChangeBack() {
+         head.style.color="#0d0701";
+      }
+   </script>
 </head>
 <body>
 
@@ -45,7 +54,7 @@
 
 <div class="catalog">
    <div class="container">
-      <h1>Каталог</h1>
+      <h1 id="head" onmouseover="colorChange()" onmouseout="colorChangeBack()">Каталог</h1>
       <p style="float: right;"><select size=1 name="sort">
          <option value="def">Порядок: по умолчанию</option>
          <option value="asc">Цена: по возрастанию</option>
