@@ -10,6 +10,14 @@
          font-size: 15px;
          margin: 0;
       }
+      input[type="text"], input[type="email"], textarea {
+         font-family: inherit;
+         font-size: inherit;
+         line-height: inherit;
+         width: 50%;
+         margin: 0 25% 20px 25%;
+         padding: 2px 5px 2px 5px;
+      }
    </style>
 </head>
 <body>
@@ -17,7 +25,7 @@
 <header class="header">
    <div class="container">
       <div class="header__inner">
-      <div class="header__logo">Карамель</div>
+      <div class="header__logo"><a href="Caramel.html" style="   text-decoration: none; color: #ea0d57 !important;">Карамель</a></div>
 
       <nav class="nav">
          <a class="nav__link" href="#about_comp">О КОМПАНИИ</a>
@@ -83,6 +91,19 @@
    </div>
 </section>
 
+<section class="contacts">
+   <div class="container">
+      <p class="message__title">Задайте нам вопрос</p>
+         <div class="message__inner">
+            <br>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш e-mail" required>
+            <textarea name="mess" placeholder="Ваше сообщение" rows="5" style="resize: none;" required></textarea>
+            <br><br>
+            <input type="checkbox" name="check1" value=1 style="margin: 0 0 0 20%;">Согласен(а) на обработку персональных данных
+         </div>
+   </div>
+</section>
 
 <section id="contact" class="contacts">
    <div class="container">
@@ -92,7 +113,7 @@
          <div class="contacts__text">
             Телефон: 8 (800) 000-00-00<br>
             E-mail: <a href="mailto:caramel@example.com" class="global">caramel@example.com</a><br>
-            Адрес: <a href="https://yandex.ru/maps" class="global">г. Курд, ул. Сахарная, 35
+            Адрес: <a href="https://yandex.ru/maps" class="global">000000,г. Курд,ул. Сахарная,35
          </div>
       </div>
    </div>
