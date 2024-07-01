@@ -12,13 +12,17 @@
          background-size: cover;
       }
       h1 {
-         padding: 40px;
          font-size: 30px;
          font-weight: 1000;
          text-transform: uppercase;
          text-align: center;
          color: #0d0701;
-         margin: 0 40px;
+         margin: 120px 0px 20px 0px;
+      }
+      select {
+         font-family: inherit;
+         font-size: 12px;
+         margin: 0 0 20px 0;
       }
    </style>
 </head>
@@ -41,8 +45,14 @@
 
 <div class="catalog">
    <div class="container">
-      <br><br><br>
       <h1>Каталог</h1>
+      <p style="float: right;"><select size=1 name="sort">
+         <option value="def">Порядок: по умолчанию</option>
+         <option value="asc">Цена: по возрастанию</option>
+         <option value="des">Цена: по убыванию</option>
+         <option value="des">Название: А–Я</option>
+         <option value="des">Название: Я–А</option>
+      </select></p>
       <table cellspacing=0 width="1200px">
          <tr>
             <td>
