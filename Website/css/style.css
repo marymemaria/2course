@@ -1,3 +1,6 @@
+html {
+   scroll-behavior: smooth;
+}
 body {
    margin: 0;
    line-height: 1.6;
@@ -140,6 +143,17 @@ body {
 }
 
 /* Message */
+.anim {
+   opacity: 0;
+   transform: translateY(20px);
+}
+
+.anim.element-show {
+   opacity: 1;
+   transition: 3s;
+   transform: translateY(0%);
+}
+
 .message__title {
    z-index: 1;
    font-size: 30px;
@@ -221,6 +235,12 @@ body {
 
 
 /* Registration */
+.reg {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+}
 .registration { 
    margin: 120px auto;
    padding: 1px 20px;
@@ -243,6 +263,7 @@ body {
    justify-content: center;
    width: 100%;
    height: 100vh;
+   background: url("../images/prod-background.jpg");
    background-size: cover;
 }
 
