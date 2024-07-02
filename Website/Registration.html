@@ -12,14 +12,7 @@
          padding: 2px 5px 2px 5px;
       }
    </style>
-   <script language="JavaScript" type="text/JavaScript">
-      function validLogin(){
-         var myLog=document.getElementById('login').value;
-         var valid=true;
-         if(myLog==""){
-            valid=false;
-         document.getElementById('login').focus();
-      }
+   <script language="JavaScript" src="main.js">
    </script>
 </head>
 <body class="videobg">
@@ -35,34 +28,33 @@
 
       <nav class="nav">
          <a class="nav__link" href="Caramel.html#about_comp">О КОМПАНИИ</a>
-         <a class="nav__link" href="#catalog">ПРОДУКЦИЯ</a>
-         <a class="nav__link" href="#contact">КОНТАКТЫ</a>
-         <a class="nav__link" href="#">ВХОД</a>
+         <a class="nav__link" href="Products.html#catalog">ПРОДУКЦИЯ</a>
+         <a class="nav__link" href="Caramel.html#contact">КОНТАКТЫ</a>
+         <a class="nav__link" href="#">РЕГИСТРАЦИЯ</a>
       </nav>
       </div>
    </div>
 </header>
 
-<div class="catalog">
+<div class="reg">
    <div class="container">
       <div class="registration">
          <p class="registration__title">Регистрация</p>
-         <label for="login">Логин</label>
-         <input type="text" id="login" name="login" maxlength=15>
-         <label for="password">Пароль</label>
-         <input type="password" name="pas" maxlength=10>
-         <br><br>
-         Выберитие тип аккаунта:<br>
-         <input type="radio" name="r1" value=1>Физическое лицо<br>
-         <input type="radio" name="r1" value=2>Юридическое лицо<br>
-         <br><br><br>
-         <button class="message__button">Регистрация</button>
+         <form>
+            <label for="login">Логин</label>
+            <input required type="text" id="login" class="login" name="login" minlength=5>
+            <label for="password">Пароль</label>
+            <input required type="password" class="password" name="password" minlength=8>
+            <br><br>
+            Выберитие тип аккаунта:<br>
+            <input type="radio" name="r1" value=1 required>Физическое лицо<br>
+            <input type="radio" name="r1" value=2 required>Юридическое лицо<br>
+            <br><br><br>
+            <button type="submit" class="message__button">Регистрация</button>
+         </form>
       </div>
    </div>
 </div>
-<script language="JavaScript" type="text/JavaScript">
-   alert('Добро пожаловать на сайт кондитерской фабрики "Карамель"!');
-</script>
 
 </body>
 </html>

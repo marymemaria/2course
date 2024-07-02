@@ -15,3 +15,16 @@ function addUnderline(head) {
 function removeUnderline(head) {
    head.style.textDecoration="none";
 }
+
+function validateForm() {
+   var a = document.forms["Form"]["name"].value;
+   var b = document.forms["Form"]["mess"].value;
+   if (a.length < 2) {
+      alert("Слишком короткое имя!");
+      return false;
+   }
+   if (b.length < 60) {
+      alert("Слишком короткое сообщение!");
+      return false;
+   }
+}
